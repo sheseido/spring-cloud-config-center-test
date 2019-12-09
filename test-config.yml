@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 7011
+spring:
+  profiles: dev
+  application:
+    name: spring-cloud-test02
+
+---
+server:
+  port: 7012
+spring:
+  profiles: test
+  application:
+    name: spring-cloud-test02
