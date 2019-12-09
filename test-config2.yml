@@ -1,13 +1,19 @@
----
 server:
   port: 8022
-
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8011
 spring:
   profiles: dev
   application:
     name: spring-cloud-test02
 
 ---
+server:
+  port: 8012
 spring:
   profiles: test
   application:
